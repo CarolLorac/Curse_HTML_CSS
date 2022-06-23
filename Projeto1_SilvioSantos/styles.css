@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    border: 30px solid rgb(238, 226, 226);
+    padding: 2%;
+    font-size: 18px;
+    font-family:Helvetica;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.cards{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(238, 226, 226);
+    margin-right: auto; /*centraliza o elemento na tela*/
+    margin-left: auto;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.cards p{
+    padding-left: 10px;
+}
+
+.cards h2{
+    padding-left: 30px;
+}
+
+

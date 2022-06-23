@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+}
+
+.adress_container, .form_container{
+    flex: 1 1 0;
+    height: 100vh;
+    text-align: left;
+}
+
+.fade{
+    background-color: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+/*adress container*/
+
+.adress_container{
+    background-image: url("../images/project_bg.jpg");
+    background-size: cover;
+    background-position-x: -130px;
+    position: relative;
+}
+
+.informations_container{
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top:25vh;
+    left: 25%;
+}
+
+.informations_container h2{
+    color: #00ad5e;
+    font-size: 23px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.informations_container p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.informations_container ion-icon{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+
+/*form container*/
+
+.form_container{
+   padding-top: 40px;
+   color: #888;
+   font-weight: bold;
+   text-align: center;
+}
+
+.form_container h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#contact_form{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+ #contact_form input,
+ #contact_form textarea,
+ #contact_form label {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    color: #aaa;
+} 
+
+#contact_form label{
+    color: #999;
+    border-bottom: 1px solid transparent;
+}
+
+#contact_form input{
+    margin-bottom: 20px;
+}
+
+#contact_form input::placeholder,
+#contact_form textarea::placeholder
+{
+    color: #ccc;
+}
+
+#contact_form input[type="submit"]{
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 7%;
+    background-color: #00ad5e;
+    color: #FFF;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#contact_form input[type="submit"]:hover{
+    background-color: #fff;
+    border: 1px solid #00ad5e;
+    color: #00ad5e;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 450px){
+    .main_container{
+        height: 100%;
+        flex-wrap: wrap; /*faz entender que cada div tem que ter seu próprio poscionamento,
+        fazendo com que uma nao fique em cima da outra - pra funcionar tem q ter o flex tbm
+        */ 
+    }
+
+    .form_container, .adress_container{
+        flex: 1 1 100%; /*isso mais o wrap faz o site entender que as divs devem ficar uma embaixo da outra*/
+    }
+
+    .form_container{
+        order: -1; /*faz o form_container aparecer primeiro na tela*/
+        padding: 20px;
+        height: 80vh;
+    }
+
+    #contact_form{
+        width: 100%;
+    }
+
+    #contact_form input,
+    #contact_form textarea,
+    #contact_form label {
+        border-color: #AAA;
+    } 
+
+    .adress_container{
+        background-position: 0;
+        height: 500px;
+    }
+
+    .fade{
+        opacity: 0.9;
+    }
+  
+    .informations_container{
+    top:15vh;
+    }
+
+    #contact_form{
+        margin-bottom: 20px;
+    }
+
+} 

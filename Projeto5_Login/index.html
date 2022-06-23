@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxmum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <header>
+        
+      <div class="main_container">
+        
+        <!-- Informações endereço -->
+        <div class="adress_container ">
+            <div class="fade"></div>   
+
+            <div class="informations_container ">
+
+                <h2><ion-icon name="navigate-outline"></ion-icon> Endereço</h2>
+                <p>Paulínia, SP</p>
+        
+                <h2><ion-icon name="call-outline"></ion-icon> Telefone</h2>
+                <p>(48) 99999-2020</p>
+        
+                <h2><ion-icon name="mail-outline"></ion-icon> E-mail</h2>
+                <p>caroline.souzab12@gmail.com</p>
+           
+            </div>
+                  
+
+        </div>
+        
+        <!-- Formulário de contato -->
+        <div class="form_container">
+            <h1>Nos mande uma mensagem!</h1>
+            <form id="contact_form">
+           
+                    <label for="name">Nome:</label> 
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>           
+               
+                    <label for="email">E-mail:</label> 
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+               
+                    <label for="phone">Telefone:</label> 
+                    <input type="text" name="phone" id="phone" placeholder="Digite seu telefone" required>
+               
+                    <label for="message">Sua mensagem:</label> 
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Como podemos te ajudar?"></textarea>
+                               
+                <input class="btn_submit" type="submit" value="Enviar mensagem" id="btn_submit" name="btn_submit">
+            </form>
+
+        </div>
+    </div>
+    </header>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

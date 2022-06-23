@@ -1,0 +1,133 @@
+/* CONFIGURAÇÕES INICIAIS */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    color: #5f6368;
+    font-size: 13px;
+}
+
+body{
+    position: relative;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+#nav_bar{
+    margin-top: 20px;
+}
+
+.nav_list{
+    padding: 0px 25px;
+}
+
+.nav_list li{
+    display: inline-block;
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+.nav_list li a{
+    text-decoration: none;
+}
+
+.nav_list li a:hover{     /*ao passar o mouse em cima da palavra vai aparecer o underline*/
+    text-decoration: underline;
+}
+
+#social_bar{
+    text-align: right;
+} 
+
+/*CORPO*/
+
+#body{
+    text-align: center;
+    padding: 7%;
+    margin-bottom: 30px;
+   
+}
+
+
+#input_box{
+    width: 43vw;
+    height: 60px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input_box input{
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0px 0px 5px #ddd;
+    font-size: 16px;
+    padding: 0 50px;
+}
+
+/*Icons*/
+#icon_magnifier, #icon_keyboard, #icon_mic{
+    position:absolute;
+    top: 15px;
+    font-size: 18px;
+}
+
+#icon_keyboard{
+    right: 55px;
+}
+
+#icon_mic{
+    right: 20px;
+}
+
+#icon_magnifier{
+    left: 20px;
+}
+
+/*Buttons*/
+#buttons_body input{ 
+  height: 35px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  padding: 2px 16px;
+  margin: 15px 5px;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+#buttons_body input:hover{
+    color: #333;
+    border: 1px solid #333;
+}
+
+
+/*RODAPÉ*/
+
+#footer{
+    height: 5%;
+    width: 100vw;
+    background-color: #f2f2f2;
+    opacity: 7;
+    padding: 10px 0px;
+    padding-bottom: 30px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer_right{
+    position:absolute;
+    right: 0;
+}
+
+#footer_left{
+    position: absolute;
+    left:0;
+}
